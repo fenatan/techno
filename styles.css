@@ -77,6 +77,18 @@ body {
   align-items: end;
   grid-gap: 50px;
   padding: 0px 50px 50px 0;
+  animation: fadeIn .3s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate3D(50px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3D(0, 0, 0);
+  }
 }
 
 .modal_img {
@@ -95,23 +107,36 @@ body {
   max-width: 600px;
 }
 
-.modal_titulo{
+.modal_titulo {
   font-size: 3rem;
 }
 
-.modal_btn{
+.modal_btn {
   margin-top: 80px;
   background-color: #000;
   cursor: pointer;
-  color:white;
+  color: white;
   border: none;
   font-size: 1rem;
   padding: 10px 25px;
-  font-family: "Noto Serif" ;
+  font-family: "Noto Serif";
 }
 
-.modal_btn:active{
+.modal_btn:active {
   background: #808080;
+}
+
+.modal_fechar {
+  border-radius: 50%;
+  border: 2px solid black;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  font-size: 1rem;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.1), 0px 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 
 .avaliacoes {
@@ -123,7 +148,7 @@ body {
   padding-bottom: 20px;
 }
 
-.avaliacoes_subtitulo{
+.avaliacoes_subtitulo {
   font-size: 1.75rem;
 }
 
@@ -132,8 +157,6 @@ body {
   margin: 20px 0 5px 0;
 }
 
-.avaliacao_usuario{
+.avaliacao_usuario {
   font-weight: bold;
 }
-
-
