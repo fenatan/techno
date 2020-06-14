@@ -1,4 +1,8 @@
-# techno
-Techno 
+# Techno
+Techno is a simple online store developed with Vue.js
 
-# A simple online store developed with vue.js
+- Add items to cart
+- Remove items from cart
+- Stock Control
+
+
