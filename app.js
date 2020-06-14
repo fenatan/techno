@@ -6,7 +6,8 @@ const vm = new Vue({
     produto: false,
     carrinho: [],
     mensagemAlerta: "Item adcionado",
-    alertaAtivo: false
+    alertaAtivo: false,
+    carrinhoAtivo: false
   },
 
   filters: {
@@ -58,6 +59,11 @@ const vm = new Vue({
     fecharModal({ target, currentTarget }) {
       if (target === currentTarget)
         this.produto = false;
+    },
+
+    clickForaCarrinho({ target, currentTarget }) {
+      if (target === currentTarget)
+        this.carrinhoAtivo = false;
     },
 
     abrirModal(id) {
